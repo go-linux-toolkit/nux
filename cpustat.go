@@ -37,6 +37,11 @@ func (this *CpuUsage) String() string {
 		this.Guest,
 		this.Total)
 }
+/*
+结构体指针参数的函数：
+cpu := &CpuUsage{}
+cpu.String()
+*/
 
 type ProcStat struct {
 	Cpu          *CpuUsage
